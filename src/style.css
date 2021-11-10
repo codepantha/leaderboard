@@ -54,6 +54,8 @@ html {
 .scores-list {
   list-style: none;
   border: 2px solid;
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 .score-item {

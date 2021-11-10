@@ -3,7 +3,7 @@
 # leaderboard
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
-![Porfolio project](img/leaderboard.PNG)
+![Leaderboard app](leaderboard.PNG)
 
 
 ## Built With
@@ -14,18 +14,25 @@
 
 ## Live Demo 🔗
 
-[Live Demo Link](https://codepantherr.github.io/Portfolio/)
+[Live Demo Link](https://codepantherr.github.io/leaderboard/)
 
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-There are no prerequisites
 
 ### Setup
-Just clone the repository to your local machine and you are all set.
+
+To setup the leaderboard app project starting template in your local, in the repo page:
+click on code (dropdown list) > Download as ZIP.
+or open terminal and go to the path you want to install project and run this command <br>
 `git clone https://github.com/codepantherr/leaderboard.git`
+
+### Deployment
+
+To run the project open folder (after extraction) or cloning then run these commands: <br>
+**`npm install`** to install all dependencies <br>
+**`npm start`** to start the application, you should see the application working at: `http://localhost:8080/`
 
 
 
