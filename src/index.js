@@ -14,6 +14,9 @@ submitButton.addEventListener('click', (e) => {
   const playerScore = scoreInput.value;
 
   submitScore(playerName, playerScore);
+
+  nameInput.value = '';
+  scoreInput.value = '';
 });
 
 refreshButton.addEventListener('click', () => {
