@@ -10,6 +10,8 @@ const scoresContainer = document.querySelector('.scores-list');
 
 const gameId = '3L4QvyqAZFTD6eSge8xk';
 
+
+
 const displayScores = (scores) => {
   scoresContainer.innerHTML = '';
 
@@ -50,6 +52,8 @@ const fetchScores = async function() {
   const scores = data.result;
   displayScores(scores);
 }
+
+fetchScores();
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
