@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: red; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.heading-text {
+  font-size: 50px;
+  padding: 20px;
+  margin: 0 60px 30px;
+}
+
+.h2 {
+  margin-bottom: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ash {
+  background-color: #e5e5e5;
+}
+
+.refresh {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.refresh-btn {
+  padding: 10px;
+}
+
+.scores-section {
+  width: 35%;
+}
+
+.scores-list {
+  list-style: none;
+  border: 2px solid;
+}
+
+.score-item {
+  padding: 10px;
+}
+
+.score-form-section {
+  width: 20%;
+}
+
+.score-form {
+  width: 100%;
+  text-align: right;
+}
+
+.score-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 10px;
+}
