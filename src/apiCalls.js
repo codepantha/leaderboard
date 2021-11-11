@@ -1,6 +1,6 @@
 import { displayMessage, displayScores } from './display';
 
-const gameId = '3L4QvyqAZFTD6eSge8xk';
+const gameId = 'tQo0GjRZGIHYnc4PyMKb';
 
 export const submitScore = async (name, score) => {
   const res = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`, {
@@ -22,6 +22,7 @@ export const fetchScores = async () => {
   const res = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`);
   const data = await res.json();
 
-  const scores = data.result;
+  let scores = data.result;
+  scores = scores.sort((a, b) => b.score - a.score);
   displayScores(scores);
 };

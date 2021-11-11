@@ -10,10 +10,8 @@ fetchScores();
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
-  const playerName = nameInput.value;
-  const playerScore = scoreInput.value;
 
-  submitScore(playerName, playerScore);
+  submitScore(nameInput.value, scoreInput.value);
 
   nameInput.value = '';
   scoreInput.value = '';

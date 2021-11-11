@@ -11,10 +11,11 @@
 - HTML
 - CSS
 - JAVASCRIPT
+- Webpack
 
 ## Live Demo 🔗
 
-[Live Demo Link](https://codepantherr.github.io/leaderboard/)
+[Live Demo Link](https://codepantherr.github.io/leaderboard/dist/)
 
 
 ## Getting Started
