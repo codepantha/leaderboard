@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 <script defer src="main.js"></script></head>
 <body>
     <div class="wrapper">
@@ -14,16 +17,9 @@
             <section class="scores-section">
                 <div class="refresh">
                     <h2 class="h2">Recent scores</h2>
-                    <button type="button" class="refresh-btn">Refresh</button>
+                    <button type="button" class="refresh-btn btn">Refresh</button>
                 </div>
-                <ul class="scores-list">
-                    <!-- <li class="score-item ash">John: 100</li>
-                    <li class="score-item">Zoe: 150</li>
-                    <li class="score-item ash">Natasha: 55</li>
-                    <li class="score-item">Peter: 78</li>
-                    <li class="score-item ash">Chloe: 42</li>
-                    <li class="score-item">Zerubabel: 190</li>
-                    <li class="score-item ash">Freya: 200</li> -->
+                <ul class="scores-list shadow">
                 </ul>
             </section>
             <section class="score-form-section">
@@ -31,7 +27,7 @@
                 <form class="score-form">
                     <input type="text" class="score-input" name="name" placeholder="Freya" required>
                     <input type="number" class="score-input" name="score" placeholder="78" required>
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn btn">Submit</button>
                 </form>
             </section>
         </div>
