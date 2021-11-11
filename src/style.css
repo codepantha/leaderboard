@@ -4,9 +4,11 @@
 }
 
 body {
-  background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #FF7A00 0%, #000000 100%), linear-gradient(20deg, #241E92 0%, #241E92 30%, #5432D3 calc(30% + 1px), #5432D3 35%, #7B6CF6 calc(35% + 1px), #7B6CF6 50%, #E5A5FF calc(50% + 1px), #E5A5FF 100%), linear-gradient(120deg, #110133 0%, #110133 40%, #00918E calc(40% + 1px), #00918E 60%, #4DD599 calc(60% + 1px), #4DD599 70%, #FFDC34 calc(70% + 1px), #FFDC34 100%);
-background-blend-mode: overlay, hard-light, overlay, normal;
+  background: radial-gradient(100% 225% at 100% 0%, #faff00 0%, #000 100%), linear-gradient(235deg, #ff7a00 0%, #000 100%), linear-gradient(20deg, #241e92 0%, #241e92 30%, #5432d3 calc(30% + 1px), #5432d3 35%, #7b6cf6 calc(35% + 1px), #7b6cf6 50%, #e5a5ff calc(50% + 1px), #e5a5ff 100%), linear-gradient(120deg, #110133 0%, #110133 40%, #00918e calc(40% + 1px), #00918e 60%, #4dd599 calc(60% + 1px), #4dd599 70%, #ffdc34 calc(70% + 1px), #ffdc34 100%);
+  background-blend-mode: overlay, hard-light, overlay, normal;
   color: #dfdcdc;
+  font-family: 'Gochi Hand', cursive;
+  overflow-x: hidden;
 }
 
 *,
@@ -17,6 +19,7 @@ background-blend-mode: overlay, hard-light, overlay, normal;
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .header {
@@ -45,11 +48,13 @@ html {
 
 .btn {
   background: transparent;
+  font-size: 16px;
   border: 2px solid #dfdcdc;
   border-radius: 4px;
   color: #dfdcdc;
   cursor: pointer;
   transition: background 1s;
+  font-family: 'Gochi Hand', cursive;
 }
 
 .btn:hover {
@@ -57,9 +62,9 @@ html {
 }
 
 .shadow {
-  box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 17px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 17px 2px rgba(0, 0, 0, 0.75);
 }
 
 .refresh {
@@ -163,6 +168,7 @@ html {
 
   .heading-text {
     text-align: center;
+    font-size: 45px;
   }
 
   .scores-section {
@@ -184,7 +190,7 @@ html {
   }
 
   .score-form-section .h2 {
-    color: #FE8400;
+    color: #fe8400;
   }
 
   .submit-btn {
