@@ -4,7 +4,9 @@
 }
 
 body {
-  /* background-color: red; */
+  background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #FF7A00 0%, #000000 100%), linear-gradient(20deg, #241E92 0%, #241E92 30%, #5432D3 calc(30% + 1px), #5432D3 35%, #7B6CF6 calc(35% + 1px), #7B6CF6 50%, #E5A5FF calc(50% + 1px), #E5A5FF 100%), linear-gradient(120deg, #110133 0%, #110133 40%, #00918E calc(40% + 1px), #00918E 60%, #4DD599 calc(60% + 1px), #4DD599 70%, #FFDC34 calc(70% + 1px), #FFDC34 100%);
+background-blend-mode: overlay, hard-light, overlay, normal;
+  color: #dfdcdc;
 }
 
 *,
@@ -17,14 +19,19 @@ html {
   box-sizing: border-box;
 }
 
+.header {
+  padding: 30px;
+}
+
 .heading-text {
   font-size: 50px;
-  padding: 20px;
-  margin: 0 60px 30px;
+  margin-bottom: 50px;
 }
 
 .h2 {
   margin-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
 }
 
 .main-container {
@@ -34,6 +41,25 @@ html {
 
 .ash {
   background-color: #e5e5e5;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #dfdcdc;
+  border-radius: 4px;
+  color: #dfdcdc;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.btn:hover {
+  background: green;
+}
+
+.shadow {
+  box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
 }
 
 .refresh {
@@ -56,19 +82,49 @@ html {
   border: 2px solid;
   height: 50vh;
   overflow-y: scroll;
+  border-radius: 7px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0051;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+  border-radius: 10px;
 }
 
 .score-item {
   padding: 10px;
 }
 
+.score-item:hover {
+  background-color: #000068;
+  cursor: pointer;
+}
+
 .score-form-section {
   width: 20%;
 }
 
+.score-form-section .h2 {
+  color: #294800;
+}
+
 .score-form {
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 .score-input {
@@ -76,8 +132,62 @@ html {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  background: transparent;
+  color: #294800;
+  border: none;
+  border-bottom: 2px solid #294800;
+  outline: none;
+  font-size: 16px;
 }
 
 .submit-btn {
   padding: 10px;
+  width: 100%;
+  border: 2px solid #294800;
+}
+
+.notification {
+  margin-top: 10px;
+  color: red;
+}
+
+.success {
+  color: rgb(24, 243, 24);
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading-text {
+    text-align: center;
+  }
+
+  .scores-section {
+    width: 70%;
+  }
+
+  .scores-list {
+    height: 70vh;
+  }
+
+  .score-input {
+    color: #dfdcdc;
+    border-bottom: 2px solid #dfdcdc;
+  }
+
+  .score-form-section {
+    width: 70%;
+    margin: 50px 0;
+  }
+
+  .score-form-section .h2 {
+    color: #FE8400;
+  }
+
+  .submit-btn {
+    border: 2px solid #dfdcdc;
+  }
 }
