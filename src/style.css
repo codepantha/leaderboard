@@ -101,12 +101,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff0051;
+  background: #5b0b0a;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background: #6d0100;
   border-radius: 10px;
 }
 
